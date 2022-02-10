@@ -137,11 +137,11 @@
       this.isGameOver = true;
       this.clear();
       var message = "Game Over";
-      var message2 = "Score: " + Game.score;
-      var message3 = "Click or press Spacebar to Play Again";
+      var message2 = "Puntuación: " + Game.score;
+      var message3 = "Presione Espacio Para Nueva Partida";
       this.pause();
       this.ctx.fillStyle = "white";
-      this.ctx.font = "bold 30px Lato, sans-serif";
+      this.ctx.font = "bold 30px Poppins, sans-serif";
       this.ctx.fillText(
         message,
         this.c.width / 2 - this.ctx.measureText(message).width / 2,
@@ -152,7 +152,7 @@
         this.c.width / 2 - this.ctx.measureText(message2).width / 2,
         this.c.height / 2 - 5
       );
-      this.ctx.font = "bold 16px Lato, sans-serif";
+      this.ctx.font = "bold 16px Poppins, sans-serif";
       this.ctx.fillText(
         message3,
         this.c.width / 2 - this.ctx.measureText(message3).width / 2,
@@ -162,9 +162,9 @@
 
     updateScore: function () {
       this.ctx.fillStyle = "white";
-      this.ctx.font = "16px Lato, sans-serif";
-      this.ctx.fillText("Score: " + this.score, 8, 20);
-      this.ctx.fillText("Lives: " + (this.maxLives - this.life), 8, 40);
+      this.ctx.font = "16px Poppins, sans-serif";
+      this.ctx.fillText("Puntuación: " + this.score, 8, 20);
+      this.ctx.fillText("Vidas: " + (this.maxLives - this.life), 8, 40);
     },
 
     loop: function () {
